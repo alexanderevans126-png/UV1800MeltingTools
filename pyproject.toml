@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "UV1800MeltingTools"
+version = "0.1.0"
+description = "Tools for calculating oligonucleotide extinction coefficients and concentration ranges."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
