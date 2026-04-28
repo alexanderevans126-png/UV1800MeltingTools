@@ -22,7 +22,8 @@ Generate a log-spaced set of concentrations within an absorbance range.
 
 from uv1800meltingtools.concentration import concentration_series
 
-# Example: epsilon = 592540 M^-1 cm^-1, 5 concentrations
+Example: 
+epsilon = 592540 M^-1 cm^-1, 5 concentrations
 values = concentration_series(592540, 5)
 
 print(values)
@@ -36,7 +37,6 @@ Calculate the nearest-neighbor extinction coefficient for a DNA or RNA sequence.
 from uv1800meltingtools.extinctioncoeff import epsilon_nn
 
 eps = epsilon_nn("ATGC", molecule="DNA")
-
 print(eps)
 
 ---
