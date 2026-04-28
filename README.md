@@ -12,6 +12,9 @@ This package provides simple utilities for setting up optical melting experiment
 - Generation of an evenly spaced concentration series on the log scale based on the Beer–Lambert law
 - Designed for use with UV–Vis instruments such as the Shimadzu UV-1800
 
+The user runs a script that will show a GUI. The user will input the nucleic acid sequence and the number of concentrations that they want to calculate.
+The script will output the extinction coefficient and the concentrations to use in the UV-1800
+
 ---
 
 ## Usage
@@ -65,6 +68,14 @@ Extinction coefficients are calculated using the nearest-neighbor model:
 ε = 2 × Σ(dinucleotide ε) − Σ(internal base ε)
 
 Values are based on literature parameters (e.g., Tinoco et al., 1989).
+
+---
+
+## GUI Usage
+
+Run the graphical interface:
+
+python scripts/uv1800_gui.py
 
 ---
 
